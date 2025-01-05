@@ -68,27 +68,28 @@ Hệ thống cung cấp các tính năng chính sau:
 
    ```bash
    git clone [https://github.com/quan2003/Student-Management.git](https://github.com/quan2003/Student-Management.git)
-
-![image](https://github.com/user-attachments/assets/8d5c2b61-8d10-4e4b-9670-0a0eecda6a4b)
+   
 *Hình 1: Giao diện login*
-![image](https://github.com/user-attachments/assets/d4931e57-40a3-4c21-a457-d7b2372f5aa8)
+![image](https://github.com/user-attachments/assets/8d5c2b61-8d10-4e4b-9670-0a0eecda6a4b)
 *Hình 2: Giao diện quản lý sinh viên*
-![image](https://github.com/user-attachments/assets/a6e8b8bd-2941-4e52-8d84-1a1c2383dd9f)
+![image](https://github.com/user-attachments/assets/d4931e57-40a3-4c21-a457-d7b2372f5aa8)
 *Hình 3: Giao diện quản lý môn học*
-![image](https://github.com/user-attachments/assets/2e0e7d39-d978-4a5c-810f-66b10868cd01)
+![image](https://github.com/user-attachments/assets/a6e8b8bd-2941-4e52-8d84-1a1c2383dd9f)
 *Hình 4: Giao diện quản lý học phí*
-![image](https://github.com/user-attachments/assets/97a05928-16ec-4e13-a552-3f5d825faaf5)
+![image](https://github.com/user-attachments/assets/2e0e7d39-d978-4a5c-810f-66b10868cd01)
 *Hình 5: Giao diện quản lý học phí chi tiết*
-![image](https://github.com/user-attachments/assets/cce090c2-5dcc-4be2-85c9-ea3bb531dde9)
+![image](https://github.com/user-attachments/assets/97a05928-16ec-4e13-a552-3f5d825faaf5)
 *Hình 6: Giao diện quản lý điểm số*
-![image](https://github.com/user-attachments/assets/8ae6637b-4bf1-442a-be1d-c4a0c0b47b6b)
+![image](https://github.com/user-attachments/assets/cce090c2-5dcc-4be2-85c9-ea3bb531dde9)
 *Hình 7: Giao diện quản lý điểm số chi tiết*
-![image](https://github.com/user-attachments/assets/69c21686-bfaa-44a6-bbca-bd6a1f390a71)
+![image](https://github.com/user-attachments/assets/8ae6637b-4bf1-442a-be1d-c4a0c0b47b6b)
 *Hình 8: Giao diện quản lý lịch học*
-![image](https://github.com/user-attachments/assets/b5d237a8-6f45-426f-b810-952863242fb9)
+![image](https://github.com/user-attachments/assets/69c21686-bfaa-44a6-bbca-bd6a1f390a71)
 *Hình 9: Giao diện quản lý điểm danh*
-![image](https://github.com/user-attachments/assets/2c576359-848b-426d-9dcb-b53ad4491839)
+![image](https://github.com/user-attachments/assets/b5d237a8-6f45-426f-b810-952863242fb9)
 *Hình 10: Giao diện report sinh viên*
+![image](https://github.com/user-attachments/assets/2c576359-848b-426d-9dcb-b53ad4491839)
+
 
 
 
