@@ -89,6 +89,12 @@ Hệ thống cung cấp các tính năng chính sau:
 ![image](https://github.com/user-attachments/assets/b5d237a8-6f45-426f-b810-952863242fb9)
 *Hình 10: Giao diện report sinh viên*
 ![image](https://github.com/user-attachments/assets/2c576359-848b-426d-9dcb-b53ad4491839)
+*Hình 10: Giao diện thông báo mail*
+![image](https://github.com/user-attachments/assets/a3dbb4ba-7ba3-4395-a314-abb12416dba9)
+*Hình 11: Giao diện thông báo mail*
+![image](https://github.com/user-attachments/assets/a4edb26f-9acb-463d-8e5a-b85fc50164aa)
+*Hình 12: Giao diện thông báo mail*
+![image](https://github.com/user-attachments/assets/45524516-af9e-49a9-8149-ffff021598cf)
 
 
 
