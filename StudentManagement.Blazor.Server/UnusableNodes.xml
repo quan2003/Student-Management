@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <ListView Id="Sinhvien_ListView">
+      <HiddenActions Id="HiddenActions">
+        <ActionLink ActionId="ImportExcel" Removed="True" />
+      </HiddenActions>
+    </ListView>
+  </Views>
+</Application>

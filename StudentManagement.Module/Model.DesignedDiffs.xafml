@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="Student Management" Company="Student Management" Logo="schoollogo">
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" Caption="Base User" />
+  </BOModel>
+  <NavigationItems NavigationStyle="TreeList">
+    <Items>
+      <Item Id="@fc9f1e5e-30a5-448f-8af9-ec64d0e0d530" Caption="Quản lý" Index="0" ImageName="BO_Department" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="@8528e424-789f-4b27-800b-5eae208f15a5" ViewId="Sinhvien_ListView" Caption="Sinh viên" Index="0" ImageName="FilterEditor_User" IsNewNode="True" />
+          <Item Id="@ad672bdb-7dfd-4810-b2f7-3d9b0dab633a" ViewId="Monhoc_ListView" Caption="Môn học" ImageName="BO_Report" Index="1" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="@85fe8c92-f2ec-4fa7-99b4-529abd03c17e" Caption="Quản lý điểm" Index="1" ImageName="BO_Appointment_32x32" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="@589792c4-c046-4ee3-87b3-cb7be0fe2433" ViewId="Diemso_ListView" Caption="Điểm số" ImageName="Doctor" IsNewNode="True" />
+          <Item Id="@a70a069a-83af-4bd3-98f0-ced2abfbc303" Caption="Điểm chi tiết" ViewId="Diemchitiet_ListView" ImageName="ShowWeightedLegend" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="@3fafbd72-8343-4a66-9206-13b033f8da85" Caption="Quản lý học phí" Index="2" ImageName="BO_PivotChart" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="@99c1456e-dbc3-42ab-87a6-2b234d17b792" ViewId="Hocphi_ListView" Caption="Học phí" Index="2" ImageName="Business_DollarCircled" IsNewNode="True" />
+          <Item Id="@591fef47-276f-4031-9f6a-b834df054076" ViewId="Hocphichitiet_ListView" Caption="Học phí chi tiết" ImageName="Travel_CurrencyExchange" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="@9ed1ebac-10ca-4066-8bd8-35f0e905383d" Caption="Quản lý lớp học" Index="3" ImageName="GroupByDate_32x32" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="@7e722ba5-da7a-44d4-9204-0e2b34414010" Caption="Điểm danh" ImageName="EditRangePermission" Index="0" ViewId="Diemdanh_ListView" IsNewNode="True" />
+          <Item Id="@17974047-6656-45eb-b76c-51b28d7aee22" ViewId="Lichhoc_ListView" Caption="Lịch học" Index="1" ImageName="ShowLegend" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="Reports">
+        <Items>
+          <Item Id="@060773fd-4b29-4433-8070-2ad54a5ebf03" ViewId="DashboardName_ListView" IsNewNode="True" />
+          <Item Id="@093835a1-1acd-40f9-bcab-bfa9570370b0" ViewId="ViewDashboardOrganizationItem_ListView" IsNewNode="True" />
+          <Item Id="@d7a98463-7344-490b-9d11-d3d8e9d06e75" ViewId="Notification_ListView" IsNewNode="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="24.1.7.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="ApplicationUser_ListView" Caption="Users" />
+    <DetailView Id="Diemchitiet_DetailView">
+      <Items>
+        <PropertyEditor Id="MonhocID" PropertyName="MonhocID" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="37.11340206185567">
+            <LayoutGroup Id="Diemchitiet" RelativeSize="100" Caption="Điểm chi tiết">
+              <LayoutGroup Id="Diemchitiet_col1" RelativeSize="66.19537275064268">
+                <LayoutItem Id="MaSinhVien" RelativeSize="27.272727272727273" />
+                <LayoutItem Id="MonhocID" ViewItem="MonhocID" Index="1" RelativeSize="19.696969696969695" IsNewNode="True" />
+                <LayoutItem Id="DiemChuyenCan" ViewItem="DiemChuyenCan" Index="2" RelativeSize="19.696969696969695" IsNewNode="True" Removed="True" />
+                <LayoutGroup Id="Autof6aafdd8-b22f-41d8-b9da-0583696dda4e" ShowCaption="False" Caption="Autof6aafdd8-b22f-41d8-b9da-0583696dda4e(8)" Direction="Horizontal" Index="3" RelativeSize="33.333333333333336" IsNewNode="True">
+                  <LayoutItem Id="DiemBaiTap" ViewItem="DiemBaiTap" Index="0" RelativeSize="50.679611650485434" IsNewNode="True" />
+                  <LayoutItem Id="DiemGiuaKy" ViewItem="DiemGiuaKy" Index="1" RelativeSize="49.320388349514566" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="DiemBaiTap" RelativeSize="21.666666666666668" Removed="True" />
+                <LayoutItem Id="DiemGiuaKy" RelativeSize="28.333333333333332" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Diemchitiet_col2" RelativeSize="33.804627249357324">
+                <LayoutItem Id="DiemCuoiKy" RelativeSize="27.272727272727273" />
+                <LayoutItem Id="DiemTongKet" RelativeSize="19.696969696969695" />
+                <LayoutItem Id="DiemTongKetThang4" RelativeSize="53.03030303030303" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="Diemsoes_Group" Direction="Vertical" RelativeSize="62.88659793814433" Caption="Điểm số">
+            <LayoutItem Id="Diemsoes" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Diemchitiet_ListView" AllowEdit="True" IsFooterVisible="True" />
+    <DetailView Id="Diemdanh_DetailView">
+      <Items>
+        <PropertyEditor Id="LichhocID" PropertyName="LichhocID" IsNewNode="True" />
+        <PropertyEditor Id="MaSinhvien" PropertyName="MaSinhvien" IsNewNode="True" />
+        <PropertyEditor Id="MonhocID" PropertyName="MonhocID" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="Diemdanh" RelativeSize="100">
+              <LayoutItem Id="MaSinhvien" ViewItem="MaSinhvien" Index="0" RelativeSize="6.746031746031746" IsNewNode="True" />
+              <LayoutItem Id="MonhocID" ViewItem="MonhocID" Index="1" RelativeSize="5.158730158730159" IsNewNode="True" />
+              <LayoutItem Id="LichhocID" ViewItem="LichhocID" Index="2" RelativeSize="5.158730158730159" IsNewNode="True" />
+              <LayoutItem Id="TrangThaiDiemDanh" Index="3" RelativeSize="5.158730158730159" />
+              <LayoutItem Id="LyDoVangMat" Index="4" RelativeSize="5.158730158730159" />
+              <LayoutItem Id="ThoiGianDiemDanh" Index="5" RelativeSize="72.61904761904762" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Diemdanh_ListView" AllowEdit="True" Filter="" Criteria="" />
+    <DetailView Id="Diemso_DetailView">
+      <Items>
+        <PropertyEditor Id="DiemchitietID" PropertyName="DiemchitietID" IsNewNode="True" />
+        <PropertyEditor Id="MaSinhvien" PropertyName="MaSinhvien" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="Diemso" RelativeSize="100">
+              <LayoutItem Id="MaSinhvien" ViewItem="MaSinhvien" Index="0" RelativeSize="7.311827956989247" IsNewNode="True" />
+              <LayoutItem Id="DiemchitietID" ViewItem="DiemchitietID" Index="1" RelativeSize="5.591397849462366" IsNewNode="True" />
+              <LayoutItem Id="KyHoc" Index="2" RelativeSize="5.591397849462366" />
+              <LayoutItem Id="NamHoc" Index="3" RelativeSize="5.591397849462366" />
+              <LayoutItem Id="XepLoai" Index="4" RelativeSize="75.91397849462365" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Diemso_ListView" AllowEdit="True" IsFooterVisible="False" />
+    <DetailView Id="Hocphi_DetailView">
+      <Items>
+        <PropertyEditor Id="MaSinhVien" PropertyName="MaSinhVien" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="26.804123711340207">
+            <LayoutGroup Id="Hocphi" Caption="Hocphi" RelativeSize="100">
+              <LayoutGroup Id="Autof142845c-f737-4a02-b628-68bd6468e67b" ShowCaption="False" Caption="Autof142845c-f737-4a02-b628-68bd6468e67b(4)" Direction="Horizontal" Index="0" RelativeSize="33.84615384615385" IsNewNode="True">
+                <LayoutItem Id="MaSinhVien" ViewItem="MaSinhVien" Index="0" RelativeSize="49.875621890547265" IsNewNode="True" />
+                <LayoutItem Id="MonhocID" ViewItem="MonhocID" Index="1" RelativeSize="50.124378109452735" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutItem Id="SoTien" ViewItem="SoTien" Index="1" RelativeSize="20" IsNewNode="True" Removed="True" />
+              <LayoutItem Id="TinhTrangHocPhi" ViewItem="TinhTrangHocPhi" Index="2" RelativeSize="20" IsNewNode="True" Removed="True" />
+              <LayoutItem Id="NgayThanhToan" Index="3" RelativeSize="26.153846153846153" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="HocPhiChiTiet_Group" Caption="Học phí chi tiết" Direction="Vertical" RelativeSize="73.19587628865979">
+            <LayoutItem Id="HocPhiChiTiet" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Hocphi_ListView" AllowEdit="True" IsFooterVisible="True" ShowAutoFilterRow="True">
+      <Columns>
+        <ColumnInfo Id="SoTien" SortIndex="0" SortOrder="Ascending">
+          <Summary>
+            <ColumnSummaryItem Id="Summary0" SummaryType="Sum" IsNewNode="True" />
+          </Summary>
+        </ColumnInfo>
+        <ColumnInfo Id="NgayThanhToan" DisplayFormat="{0:dd/MM/yyyy HH:mm}" />
+      </Columns>
+    </ListView>
+    <DetailView Id="Hocphichitiet_DetailView">
+      <Items>
+        <PropertyEditor Id="MaSinhvien" PropertyName="MaSinhvien" IsNewNode="True" />
+        <PropertyEditor Id="MonHocID" PropertyName="MonHocID" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="Hocphichitiet" RelativeSize="100">
+              <LayoutGroup Id="Hocphichitiet_col1" RelativeSize="56.935483870967744">
+                <LayoutItem Id="MaSinhvien" ViewItem="MaSinhvien" Index="0" RelativeSize="9.941520467836257" IsNewNode="True" />
+                <LayoutItem Id="MonHocID" ViewItem="MonHocID" Index="1" RelativeSize="7.60233918128655" IsNewNode="True" />
+                <LayoutItem Id="MaLopHocPhan" Index="2" RelativeSize="7.60233918128655" />
+                <LayoutItem Id="LanHoc" Index="3" RelativeSize="7.60233918128655" />
+                <LayoutItem Id="SoTinChi" ViewItem="SoTinChi" Index="4" RelativeSize="7.60233918128655" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="TinhTrang" ViewItem="TinhTrang" Index="5" RelativeSize="59.64912280701754" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Hocphichitiet_col2" RelativeSize="43.064516129032256" Caption="Hocphichitiet_col2">
+                <LayoutItem Id="TongHocPhi" RelativeSize="100" />
+                <LayoutItem Id="TinhTrang" RelativeSize="90.05847953216374" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Hocphichitiet_ListView" AllowEdit="True" ShowAutoFilterRow="True" IsFooterVisible="True">
+      <Columns>
+        <ColumnInfo Id="TongHocPhi" SortIndex="0" SortOrder="Ascending">
+          <Summary>
+            <ColumnSummaryItem Id="Summary0" SummaryType="Sum" IsNewNode="True" />
+          </Summary>
+        </ColumnInfo>
+      </Columns>
+    </ListView>
+    <DetailView Id="Lichhoc_DetailView">
+      <Items>
+        <PropertyEditor Id="MaSinhVien" PropertyName="MaSinhVien" IsNewNode="True" />
+        <PropertyEditor Id="MonhocID" PropertyName="MonhocID" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="30.515463917525775">
+            <LayoutGroup Id="Lichhoc" RelativeSize="100">
+              <LayoutGroup Id="Autob06cc998-ea90-4279-83ca-f5ccf1fbac26" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="24.324324324324323" IsNewNode="True">
+                <LayoutItem Id="MaSinhVien" ViewItem="MaSinhVien" Index="0" RelativeSize="28.73134328358209" IsNewNode="True" />
+                <LayoutItem Id="MonhocID" ViewItem="MonhocID" Index="1" RelativeSize="71.26865671641791" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutItem Id="NgayHoc" ViewItem="NgayHoc" Index="1" RelativeSize="17.56756756756757" IsNewNode="True" Removed="True" />
+              <LayoutItem Id="GioHoc" RelativeSize="17.56756756756757" Index="2" />
+              <LayoutItem Id="PhongHoc" RelativeSize="17.56756756756757" Index="3" />
+              <LayoutItem Id="NotificationSent" RelativeSize="22.972972972972972" Index="4" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="Diemdanhs_Group" Caption="Điểm danh" Direction="Vertical" RelativeSize="69.48453608247422">
+            <LayoutItem Id="Diemdanhs" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Lichhoc_ListView" AllowEdit="True" />
+    <DetailView Id="Monhoc_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="30.103092783505154">
+            <LayoutGroup Id="Monhoc" Caption="Môn học" RelativeSize="100">
+              <LayoutGroup Id="Monhoc_col1" RelativeSize="49.87146529562982">
+                <LayoutItem Id="TenMon" RelativeSize="36.734693877551024" />
+                <LayoutItem Id="SoTC" RelativeSize="26.53061224489796" />
+                <LayoutItem Id="MoTa" RelativeSize="36.734693877551024" />
+              </LayoutGroup>
+              <LayoutGroup Id="Monhoc_col2" RelativeSize="50.12853470437018">
+                <LayoutItem Id="Khoa" RelativeSize="36.734693877551024" />
+                <LayoutItem Id="HocPhiTheoTichChi" RelativeSize="63.265306122448976" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" RelativeSize="69.89690721649484">
+            <LayoutGroup Id="Lichhocs" RelativeSize="100" Caption="Lịch học">
+              <LayoutItem Id="Lichhocs" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="Diemchitiets" RelativeSize="100" Caption="Điểm chi tiết">
+              <LayoutItem Id="Diemchitiets" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="Diemdanhs" RelativeSize="100" Caption="Điểm danh">
+              <LayoutItem Id="Diemdanhs" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="Hocphichitiets" RelativeSize="100" Caption="Học phí chi tiết">
+              <LayoutItem Id="Hocphichitiets" RelativeSize="100" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Monhoc_ListView" AllowEdit="True" NewItemRowPosition="Top" />
+    <DashboardView Id="MyDashboardView" IsNewNode="True">
+      <Items IsNewNode="True">
+        <DashboardViewItem Id="Sinhvien" ViewId="Sinhvien_ListView" IsNewNode="True" />
+      </Items>
+      <Layout IsNewNode="True">
+        <LayoutGroup Id="Main" IsNewNode="True">
+          <LayoutItem Id="Sinhvien" ViewItem="Sinhvien" Index="0" IsNewNode="True" />
+        </LayoutGroup>
+      </Layout>
+    </DashboardView>
+    <DetailView Id="Sinhvien_DetailView">
+      <Items>
+        <PropertyEditor Id="HocPhiChiTiet" PropertyName="Hocphichitiets" View="Hocphichitiet_ListView" LinkView="Hocphichitiet_ListView" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="45.597897503285154">
+            <LayoutGroup Id="Sinhvien" RelativeSize="60.518731988472624" Caption="Sinh viên">
+              <LayoutGroup Id="Sinhvien_col1" RelativeSize="50">
+                <LayoutItem Id="MaSinhVien" RelativeSize="19.767441860465116" />
+                <LayoutItem Id="HoTen" RelativeSize="15.116279069767442" />
+                <LayoutItem Id="Email" RelativeSize="15.116279069767442" />
+                <LayoutItem Id="SDT" RelativeSize="15.116279069767442" />
+                <LayoutItem Id="DiaChi" RelativeSize="15.116279069767442" />
+                <LayoutItem Id="NgaySinh" RelativeSize="19.767441860465116" />
+              </LayoutGroup>
+              <LayoutGroup Id="Sinhvien_col2" RelativeSize="50">
+                <LayoutItem Id="GioiTinh" RelativeSize="19.767441860465116" />
+                <LayoutItem Id="Khoa" RelativeSize="15.116279069767442" />
+                <LayoutItem Id="NgayTao" RelativeSize="15.116279069767442" />
+                <LayoutItem Id="NgayCapNhat" RelativeSize="15.116279069767442" />
+                <LayoutItem Id="EnableEmailNotification" RelativeSize="34.883720930232556" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Auto6cc7f087-9621-4200-b31e-eee2458b074a" ShowCaption="False" Caption="Auto6cc7f087-9621-4200-b31e-eee2458b074a(17)" Direction="Horizontal" Index="1" RelativeSize="39.481268011527376" IsNewNode="True">
+              <LayoutGroup Id="Hocphis" ShowCaption="True" Index="0" RelativeSize="50.32154340836013" Caption="Học phí" IsNewNode="True">
+                <LayoutItem Id="Hocphis" ViewItem="Hocphis" Index="0" RelativeSize="100" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Hocphichitiets" ShowCaption="True" Index="1" RelativeSize="49.67845659163987" Caption="Học phí chi tiết" IsNewNode="True">
+                <LayoutItem Id="Hocphichitiets" ViewItem="Hocphichitiets" Index="0" RelativeSize="100" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="Diemdanhs" ShowCaption="True" Index="1" RelativeSize="16.4257555847569" Caption="Điểm danh" IsNewNode="True">
+            <LayoutItem Id="Diemdanhs" ViewItem="Diemdanhs" Index="0" RelativeSize="100" IsNewNode="True" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" RelativeSize="4.073587385019711" Index="2">
+            <LayoutGroup Id="Diemdanhs" RelativeSize="100" Index="1" Removed="True">
+              <LayoutItem Id="Diemdanhs" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="Diemsoes" RelativeSize="100" Removed="True">
+              <LayoutItem Id="Diemsoes" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="Hocphichitiets" Removed="True" />
+            <LayoutGroup Id="Hocphis" RelativeSize="100" Removed="True">
+              <LayoutItem Id="Hocphis" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="Lichhocs" RelativeSize="100" Removed="True">
+              <LayoutItem Id="Lichhocs" RelativeSize="100" />
+            </LayoutGroup>
+          </TabbedGroup>
+          <LayoutGroup Id="Lichhocs" ShowCaption="True" Index="3" RelativeSize="16.4257555847569" IsNewNode="True">
+            <LayoutItem Id="Lichhocs" ViewItem="Lichhocs" Index="0" RelativeSize="100" IsNewNode="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="Diemsoes" ShowCaption="True" Index="4" RelativeSize="17.47700394218134" Caption="Điểm số" IsNewNode="True">
+            <LayoutItem Id="Diemsoes" ViewItem="Diemsoes" Index="0" RelativeSize="100" IsNewNode="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Sinhvien_ListView" AllowEdit="True" IsFooterVisible="True">
+      <Columns>
+        <ColumnInfo Id="MaSinhVien">
+          <Summary>
+            <ColumnSummaryItem Id="Summary0" SummaryType="Count" IsNewNode="True" />
+          </Summary>
+        </ColumnInfo>
+      </Columns>
+      <Filters CurrentFilterId="" />
+    </ListView>
+  </Views>
+</Application>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Logo="BO_Lead_32x32">
+  <ActionDesign>
+    <Actions>
+      <Action Id="ImportExcel" ShowItemsOnClick="False" />
+    </Actions>
+  </ActionDesign>
+  <NavigationItems NavigationStyle="Accordion">
+    <Items>
+      <Item Id="@fc9f1e5e-30a5-448f-8af9-ec64d0e0d530" ImageName="BO_Category" />
+      <Item Id="@47d566eb-dd01-45f6-b1f2-9aca1ef78926" Caption="Quản lý học phí" Index="1" ImageName="BO_PivotChart" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="@99c1456e-dbc3-42ab-87a6-2b234d17b792" ViewId="Hocphi_ListView" Caption="Học phí" Index="0" ImageName="Business_DollarCircled" IsNewNode="True" />
+          <Item Id="@eadda091-b58b-4cc8-aef5-06a698800ee3" ViewId="Hocphichitiet_ListView" Caption="Học phí chi tiết" Index="0" ImageName="Travel_CurrencyExchange" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="@85fe8c92-f2ec-4fa7-99b4-529abd03c17e" Index="2" />
+      <Item Id="@9ed1ebac-10ca-4066-8bd8-35f0e905383d" Index="3">
+        <Items>
+          <Item Id="@7e722ba5-da7a-44d4-9204-0e2b34414010" ViewId="Diemdanh_ListView" />
+        </Items>
+      </Item>
+      <Item Id="@3fafbd72-8343-4a66-9206-13b033f8da85" Removed="True" />
+    </Items>
+  </NavigationItems>
+  <Options UIType="TabbedMDI" RestoreTabbedMdiLayout="False" ShowTabImage="True" />
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="24.1.7.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="Sinhvien_ListView" ShowAutoFilterRow="True" />
+  </Views>
+</Application>

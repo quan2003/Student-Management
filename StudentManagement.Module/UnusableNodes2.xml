@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="Sinhvien_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Sinhvien">
+              <LayoutGroup Id="Sinhvien_col2">
+                <LayoutItem Id="Khoa" RelativeSize="17.80821917808219" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="@fc9f1e5e-30a5-448f-8af9-ec64d0e0d530">
+        <Items Id="Items">
+          <Item Id="@3dd346a3-22f2-47b8-8355-f97d2c12df3c" ViewId="Tailieuhoctap_ListView" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+</Application>

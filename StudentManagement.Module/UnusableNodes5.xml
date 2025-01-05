@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <ListView Id="Sinhvien_Hocphis_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="MonhocID" SortIndex="0" SortOrder="Ascending" />
+      </Columns>
+    </ListView>
+    <DetailView Id="Hocphi_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="MonhocID" PropertyName="MonhocID" />
+      </Items>
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Hocphi">
+              <LayoutGroup Id="Autof142845c-f737-4a02-b628-68bd6468e67b">
+                <LayoutItem Id="MonhocID" ViewItem="MonhocID" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

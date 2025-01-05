@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <CheckEolTargetFramework>false</CheckEolTargetFramework>
+    <Deterministic>false</Deterministic>
+    <AssemblyVersion>1.0.*</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Configurations>Debug;Release;EasyTest</Configurations>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Model.DesignedDiffs.xafml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Model.DesignedDiffs.xafml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.ExpressApp" Version="24.1.7" />
+    <PackageReference Include="DevExpress.ExpressApp.CodeAnalysis" Version="24.1.7" />
+    <PackageReference Include="DevExpress.ExpressApp.ConditionalAppearance" Version="24.1.7" />
+    <PackageReference Include="DevExpress.ExpressApp.Notifications" Version="24.1.7" />
+    <PackageReference Include="DevExpress.ExpressApp.Objects" Version="24.1.7" />
+    <PackageReference Include="DevExpress.ExpressApp.ReportsV2" Version="24.1.7" />
+    <PackageReference Include="DevExpress.ExpressApp.Security" Version="24.1.7" />
+    <PackageReference Include="DevExpress.ExpressApp.Security.Xpo" Version="24.1.7" />
+    <PackageReference Include="DevExpress.ExpressApp.Validation" Version="24.1.7" />
+    <PackageReference Include="DevExpress.ExpressApp.Xpo" Version="24.1.7" />
+    <PackageReference Include="DevExpress.Persistent.Base" Version="24.1.7" />
+	<PackageReference Include="DevExpress.ExpressApp.FileAttachment.Blazor" Version="24.1.7" />
+	<PackageReference Include="DevExpress.ExpressApp.Blazor" Version="24.1.7" />
+    <PackageReference Include="DevExpress.Persistent.BaseImpl.Xpo" Version="24.1.7" />
+	  <PackageReference Include="Quartz" Version="3.13.1" />
+	  <PackageReference Include="Quartz.Extensions.Hosting" Version="3.13.1" />
+    <PackageReference Include="Azure.Identity" Version="1.13.1" />
+    <PackageReference Include="NPOI" Version="2.7.2" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.3.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="BusinessObjects\StudentManagement.xpo.diagram">
+      <AutoGen>True</AutoGen>
+    </None>
+    <None Update="UnusableNodes.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+    </None>
+    <None Update="UnusableNodes1.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+    </None>
+    <None Update="UnusableNodes2.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+    </None>
+    <None Update="UnusableNodes3.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+    </None>
+    <None Update="UnusableNodes4.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+    </None>
+    <None Update="UnusableNodes5.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+    </None>
+    <None Update="UnusableNodes6.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+    </None>
+  </ItemGroup>
+</Project>
